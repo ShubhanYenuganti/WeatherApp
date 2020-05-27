@@ -3,12 +3,15 @@ var {Link, IndexLink} = require('react-router');
 
 var Nav = () => {
   return (
-    <div>
-      <h2>Nav Component</h2>
-      <IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Get Weather</IndexLink>
-      <Link to="/about" activeClassName="active"  activeStyle={{fontWeight: 'bold'}}>About</Link>
+    <div className = "topnav">
+      <a className = "a1">
+        <IndexLink to="/">Get Weather</IndexLink>
+      </a>
+      <a className = "a2">
+        <Link to="/about">About</Link>
+      </a>
     </div>
   );
-};
+}
 
 module.exports = Nav;
